@@ -867,6 +867,7 @@ impl ViewTarget {
 }
 
 #[derive(Component)]
+#[component(clone_behavior = Ignore)]
 pub struct ViewDepthTexture {
     pub texture: Texture,
     attachment: DepthAttachment,
